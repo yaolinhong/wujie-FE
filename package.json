@@ -1,0 +1,51 @@
+{
+  "name": "wujie-integration-xiaofa-project",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "prepare": "husky install",
+    "commit": "git add . && git status && git-cz"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vueuse/core": "^9.1.1",
+    "@vueuse/router": "^9.1.1",
+    "axios": "^0.27.2",
+    "qs": "^6.11.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.0",
+    "vue": "^3.2.25",
+    "vue-router": "^4.1.5",
+    "vue-tsc": "^0.29.8",
+    "wujie-vue3": "^1.0.0-rc.13"
+  },
+  "devDependencies": {
+    "@aegis.inc/eslint-config-aegis": "latest",
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "commitizen": "^4.2.4",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.6.0",
+    "git-cz": "^4.9.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.2",
+    "prettier": "2.7.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": "eslint --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  }
+}
